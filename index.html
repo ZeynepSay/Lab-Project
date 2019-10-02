@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>SEARCH</title>
+    <link rel="stylesheet" href="css/searchsparql_1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="searchFormContainer">
+            <form id="searchForm" id="searchForm" autocomplete="off" action="/action_page.php">
+                <h1>Search</h1>
+                <input type="text" id="searchField" name="searchField" placeholder="Search..." />
+                <input type="button" id="searchSubmit" name="searchSubmit" value="Submit" />
+                <p id="p01"></p>
+            </form>
+        </div>
+        <p id="resultsContainer">
+            </li id="answers"><b>ANSWER:</b></li>
+            <table id="tableResults">
+            </table>
+        </p>
+        <ul id="UL">
+            <a><b>QUESTION TEMPLATES</b></a>
+            <ul>
+                <li><b>Einsatzkraefte:</b></li>
+                <li id="Einsatzkraefte1"><a href="#">Was sind die Einsatzkräefte?</a></li>
+                <li id="Einsatzkraefte2"><a href="#">Wo ist der Einsatzkraft Fw Schierbrok?</a></li>
+                <li id="Einsatzkraefte3"><a href="#">Wie viele Personen hat die Einsatzkraft 1. Löschzug?</a></li>
+                <li id="Einsatzkraefte4"><a href="#">Wie ist der Status der Einsatzkraft Landespolizei?</a></li>
+                <li id="Einsatzkraefte5"><a href="#">Wie lautet die Telefonnummer der Einsatzkraft Polizei?</a></li>
+                <li id="Einsatzkraefte6"><a href="#">Wie viele PA-Träger sind im Einsatzkraft Fachzug Rüst/Rettung?</a></li>
+                <li id="Einsatzkraefte7"><a href="#">Was sind Funknamen der Einsatzkraftt Fw Vechta?</a></li>
+                <li id="Einsatzkraefte8"><a href="#">Was ist der typ der Einsatzkraft BTW?</a></li>
+                <li id="Einsatzkraefte9"><a href="#">Welche Einsatzkräefte haben den Status 1.0?</a></li>
+                <li id="Einsatzkraefte10"><a href="#">Welche datumzeit hat die Einsatzkraft Polizei?</a></li>
+                <li><b>Einsatzabschnitte:</b></li>
+                <li id="Einsatzabschnitte1"><a href="#">Was sind die Einsatzabschnitte?</a></li>
+                <li id="Einsatzabschnitte2"><a href="#">Was ist der Funkkanal der Einsatzabschnitt EA 2?</a></li>
+                <li id="Einsatzabschnitte3"><a href="#">Wo ist der Einsatzabschnitt EA 1- UAE 2?</a></li>
+                <li id="Einsatzabschnitte4"><a href="#">Welche Einsatzkräefte haben den Einsatzabschnitt EA 3?</a></li>
+                <li id="Einsatzabschnitte5"><a href="#">Welche datumzeit hat die Einsatzabschnitt TEL?</a></li>
+                <li id="Einsatzabschnitte6"><a href="#">Welche Einsatzabschnitt hat die Einsatzkraft Bundespolizei?</a></li>
+                <li><b>Einsatzes:</b></li>
+                <li id="Einsatzes1"><a href="#">Wie heißen alle Einsatzes?</a></li>
+                <li id="Einsatzes2"><a href="#">Wie heißen alle Alarmstichworts?</a></li>
+                <li id="Einsatzes3"><a href="#">Was ist das Datum von Hochwasser?</a></li>
+                <li id="Einsatzes4"><a href="#">Welche Einsatz hat den Alarmstichwort TH allgemein?</a></li>
+                <li id="Einsatzes5"><a href="#">Welche Einsatzkräefte haben den Einsatz Bahnunfall in Leese?</a></li>
+                <li id="Einsatzes6"><a href="#">Welche Einsatzes haben das Datum nach 2017-07-01?</a></li>
+                <li id="Einsatzes7"><a href="#">Welche Einsatzes haben das Datum vor 2017-07-01?</a></li>
+                <li><b>Leiter:</b></li>
+                <li id="Leiter1"><a href="#">Wie heißen alle Leiter?</a></li>
+                <li id="Leiter2"><a href="#">Welche Einheiten haben einen Leiter?</a></li>
+                <li id="Leiter3"><a href="#">Welche Einheit hat der Leiter Andreas Haake?</a></li>
+                <li id="Leiter4"><a href="#">Wer ist der Leiter der Einheit 2. Zug?</a></li>
+                <li id="Leiter5"><a href="#">Wie lautet die Telefonnummer von Leiter Sven-Döding?</a></li>
+                <li id="Leiter6"><a href="#">Wie viele unterleiter hat Einsatzkraefte RD Lk Oldenburg?</a></li>
+                <li id="Leiter7"><a href="#">Wie viele leiter hat Einsatzkraefte 1.Löschzug?</a></li>
+                <li id="Leiter8"><a href="#">Wie viele Einheiten haben einen Leiter?</a></li>
+                <li id="Leiter9"><a href="#">Wie viele Einheiten haben keinen Leiter?</a></li>
+                <li id="Leiter10"><a href="#">Wie viele Einheiten hat der Leiter Lars Engelke?</a></li>
+                <li><b>Meldung:</b></li>
+                <li id="Meldung1"><a href="#">Was ist die Betreffzeile der Nachricht?</a></li>
+                <li id="Meldung2"><a href="#">Was ist der Inhalt mit dem Betreff Einsatztagebuch?</a></li>
+                <li id="Meldung3"><a href="#">Wer ist der Empfanger mit dem Betreff Auftrag?</a></li>
+                <li id="Meldung4"><a href="#">Wer ist der Absender mit dem Betreff Auftrag?<a></li>
+                <li id="Meldung5"><a href="#">Wie viele Nachrichten hat den Status Erledigt?</a></li>
+                <li id="Meldung6"><a href="#">Wie ist der Status der Betreff Einsatzbefehl?</a></li>
+                <li id="Meldung7"><a href="#">Wie ist der lagevortrag mit dem Betreff Kräftedisposition?</a></li>
+                <li><b>Auftrag:</b></li>
+                <li id="Auftrag1"><a href="#">Welche sind die Auftrage?</a></li>
+                <li id="Auftrag2"><a href="#">Welche Auftrage haben den Einheit EA 1?</a></li>
+                <li id="Auftrag3"><a href="#">Welche Einheit hat den Auftrag Evakuirung?</a></li>
+                <li id="Auftrag4"><a href="#">Wie viele Auftrage gibt es?</a></li>
+                <li id="Auftrag5"><a href="#">Wie viele Einheiten haben den Auftrag Befüllung Sandsäcke?</a></li>
+            </ul>
+        </ul>
+        </ul>
+    </div>
+
+    <script>
+        $('#searchSubmit').on('click', function() {
+            var message, x;
+            message = document.getElementById("p01");
+            message.innerHTML = "";
+            x = document.getElementById("searchField").value;
+            try {
+                if (x == "") throw "empty";
+                if (x = Number(x)) throw "not correct ";
+
+            } catch (err) {
+                message.innerHTML = "ERROR: Input is " + err;
+            }
+        });
+    </script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/Auftrag.js"></script>
+    <script src="js/Meldung.js"></script>
+    <script src="js/einkraft.js"></script>
+    <script src="js/Einsatzabschnitte.js"></script>
+    <script src="js/Einsatzes.js"></script>
+    <script src="js/Leiter.js"></script>
+    <script src="js/template_Einsatzkraefte.js"></script>
+    <script src="js/template_auftrag.js"></script>
+    <script src="js/template_Einsatzes.js"></script>
+    <script src="js/template_leiter.js"></script>
+</body>
+
+</html>
